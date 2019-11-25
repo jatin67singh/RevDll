@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Doublylinkedlistrev {
+public class RevDll {
 	static Node head;
 	public static Scanner sc=new Scanner(System.in);
 	static class Node
@@ -13,7 +13,7 @@ public class Doublylinkedlistrev {
 
 		}
 	}
-	public static Doublylinkedlistrev insert(Doublylinkedlistrev li,int data)
+	public static RevDll insert(RevDll li,int data)
 	{
 		Node newNode=new Node(data);
 		newNode.next=null;
@@ -37,7 +37,7 @@ public class Doublylinkedlistrev {
 		}
 		return li;
 	}
-	public static void display(Doublylinkedlistrev li)
+	public static void display(RevDll li)
 	{
 		Node current=li.head;
 		if(li.head==null)
@@ -55,7 +55,7 @@ public class Doublylinkedlistrev {
 			System.out.println(current.data);
 		}
 	}
-	public static void displayrev(Doublylinkedlistrev li)
+	public static void displayrev(RevDll li)
 	{
 		if(li.head==null)
 		{
@@ -78,7 +78,7 @@ public class Doublylinkedlistrev {
 		}
 	}
 	public static void main(String[] args){
-		Doublylinkedlistrev li=new Doublylinkedlistrev();
+		RevDll li=new RevDll();
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the input size");
 		int n=sc.nextInt();
